@@ -1,5 +1,11 @@
+import AppHeader from "../appHeader/AppHeader";
+
+import '../../style/style.scss';
+
 const App: React.FC = () => {
-  return <h1>hi</h1>;
+  return (
+    <AppHeader />
+  )
 };
 
 export default App;
