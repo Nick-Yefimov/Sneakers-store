@@ -1,0 +1,47 @@
+.sneakers {
+    margin: 40px 60px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.card {
+    border: 1px solid #f3f3f3;
+    padding: 20px;
+    height: 260px;
+    width: 210px;
+    border-radius: 40px;
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #BDBDBD;
+
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__btn {
+        background-color: #fff;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+}

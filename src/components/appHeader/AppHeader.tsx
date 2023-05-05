@@ -1,6 +1,9 @@
 import cart from '../../resources/img/cart.svg';
 import user from '../../resources/img/user.svg';
 
+import AppProducts from '../appProducts/AppProducts';
+import AppSearch from '../appSearch/AppSearch';
+
 import './appHeader.scss';
 
 const AppHeader: React.FC = () => {
@@ -23,6 +26,8 @@ const AppHeader: React.FC = () => {
 					</li>
 				</ul>
 			</header>
+			<AppSearch />
+			<AppProducts />
 		</div>
 	)
 }
