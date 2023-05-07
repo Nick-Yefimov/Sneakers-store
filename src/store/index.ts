@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-
+import apiSlice from '../components/features/apiSlice';
 
 const store = configureStore({
-    reducer: {},
+    reducer: {
+        sneakers: apiSlice
+    },
     middleware: getDefaultMiddleWare => getDefaultMiddleWare().concat(),
     devTools: process.env.NODE_ENV !== 'production'
 })
