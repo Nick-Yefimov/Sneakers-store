@@ -5,7 +5,7 @@ import AppSearch from '../../appSearch/AppSearch';
 const MainPage: React.FC = () => {
 
     return (
-        <div className='wrapper'>
+        <div>
             <AppHeader />
             <AppSearch />
             <AppProducts />

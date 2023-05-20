@@ -11,7 +11,6 @@ import plus from '../../resources/img/plus.svg';
 
 
 
-
 const AppProducts: React.FC = () => {
 	const dispatch = useAppDispatch();
 	const { sneaker, status } = useAppSelector(state => state.sneakers);
@@ -24,17 +23,9 @@ const AppProducts: React.FC = () => {
 		dispatch(addItemsInCart(sneaker))
 	}
 
-	console.log(addItemsInCart, 'cart')
-
 	const spinner = [...new Array(12)].map((i: number) => <Spinner key={i} />)
 
 	const sneakerProducts = sneaker.map((sneakerCard: Sneakers) => {
-		// return (
-		// 	<SneakerCard
-		// 		sneaker={sneakerCard}
-		// 		{...sneakerCard}
-		// 		key={sneakerCard.id} />
-		// )
 		return (
 			<div className='card' key={sneakerCard.id}>
             <img width={133} height={112} src={sneakerCard.image} alt={sneakerCard.title} />

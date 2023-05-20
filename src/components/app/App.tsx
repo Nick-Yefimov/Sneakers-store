@@ -8,7 +8,7 @@ import CartPage from '../pages/cartPage/CartPage';
 const App: React.FC = () => {
 	return (
 		<Router>
-			<div className='wrapper'>
+			<div  className='wrapper'>
 				<Routes>
 					<Route path='/' element={<MainPage />} />
 					<Route path='/cart' element={<CartPage />} />

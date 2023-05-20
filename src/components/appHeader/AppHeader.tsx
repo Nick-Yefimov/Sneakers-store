@@ -11,8 +11,6 @@ const AppHeader: React.FC = () => {
 
 	const { totalPrice } = useAppSelector(state => state.cart)
 
-	console.log('totalPrice', totalPrice)
-
 	return (
 		<>
 			<header className="header">
