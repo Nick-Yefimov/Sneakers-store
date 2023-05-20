@@ -4,8 +4,15 @@ import user from '../../resources/img/user.svg';
 
 
 import './appHeader.scss';
+import { useAppSelector } from '../../hooks/reduxHook';
+
 
 const AppHeader: React.FC = () => {
+
+	const { totalPrice } = useAppSelector(state => state.cart)
+
+	console.log('totalPrice', totalPrice)
+
 	return (
 		<>
 			<header className="header">
@@ -18,7 +25,8 @@ const AppHeader: React.FC = () => {
 				<ul className="header__right">
 					<li>
 						<Link to='/cart'><img width={18} height={18} src={cart} alt="cart" /></Link>
-						<span>1000 uah</span>
+						<span>{totalPrice} $</span>
+						
 					</li>
 					<li>
 						<img width={18} height={18} src={user} alt="user" />

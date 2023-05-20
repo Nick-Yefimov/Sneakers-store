@@ -3,6 +3,7 @@ import AppProducts from '../../appProducts/AppProducts';
 import AppSearch from '../../appSearch/AppSearch';
 
 const MainPage: React.FC = () => {
+
     return (
         <div className='wrapper'>
             <AppHeader />
