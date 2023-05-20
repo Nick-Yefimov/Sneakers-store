@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import apiSlice from '../components/features/apiSlice';
+import apiSlice from '../features/apiSlice';
+import cartSlice from '../features/cartSlice';
 
 const store = configureStore({
     reducer: {
-        sneakers: apiSlice
+        sneakers: apiSlice,
+        cart: cartSlice,
     },
     middleware: getDefaultMiddleWare => getDefaultMiddleWare().concat(),
     devTools: process.env.NODE_ENV !== 'production'

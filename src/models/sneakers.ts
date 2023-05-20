@@ -7,7 +7,7 @@ export interface Sneakers {
 }
 
 export interface SneakersState {
-    data: Sneakers[]
+    sneaker: Sneakers[];
     status: boolean;
     error: string | null;
 }
