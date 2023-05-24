@@ -4,6 +4,7 @@ import '../../style/style.scss';
 
 import MainPage from '../pages/main/MainPage';
 import CartPage from '../pages/cartPage/CartPage';
+import SingleSneakerPage from '../pages/singleSneakerPage/SingleSneakerPage';
 
 const App: React.FC = () => {
 	return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
 				<Routes>
 					<Route path='/' element={<MainPage />} />
 					<Route path='/cart' element={<CartPage />} />
+					<Route path='/singleProduct/:id' element={<SingleSneakerPage/>} />
 				</Routes>
 			</div>
 		</Router>
